@@ -5,6 +5,7 @@ import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
 import Navbar from "./components/Navbar";
 import ProtectedRoute from "./ProtectedRoute";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
             </ProtectedRoute>
           }
         />
+          <Route path="*" element={<NotFound />} />
+
       </Routes>
       </>
   );
